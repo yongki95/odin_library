@@ -15,10 +15,39 @@
             <a id="LinkedIn">Linkedin</a>
             <a id="github">github</a>
         </nav>
+
     </header>
     
     <main>
+        <form id="temp_form">
+            <div class="book_title">
+                <label for="book_title">Book title</label>
+                <input type="text" name="book_title" id="book_title">
+            </div>
+            
+            <div class="author">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author">
+            </div>
 
+            <div class="pages">
+                <label for="pages">Number of pages</label>
+                <input type="number" name="pages" id="pages">
+            </div>
+           
+            <div class="read_or_not">
+                <label for="read">Read book?</label>
+                <select id="read" name="read">
+                    <option value="yes">Yes</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+
+            <div class="btn_container">
+                <button type="submit">Add book</button>
+            </div>
+
+        </form>
     </main>
 
     <footer>
