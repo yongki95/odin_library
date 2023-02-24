@@ -11,6 +11,17 @@ function addBookToLibrary(obj){
     myLibrary.push(obj);
 }
 
+function createGridCell() {
+    
+}
+
+function displayBook() {
+    const grid = document.getElementsByClassName('grid_container');
+
+
+}
+
+
 const form = document.getElementById('temp_form');
 
 form.addEventListener('submit', (e) => {
