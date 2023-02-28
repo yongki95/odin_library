@@ -11,40 +11,43 @@
 <body>
     <header>
         <div class="Logo">Odin library</div>
-        <nav>
-            <a id="LinkedIn">Linkedin</a>
-            <a id="github">github</a>
-        </nav>
+        <button id="add_book" onclick=openForm()>Add Book</button>
+
 
     </header>
     
     <main>
+        <p class="main_title">
+            Book list
+        </p>
+
+        <div class="container">
+            
+        </div>
         <form id="temp_form">
             <div class="book_title">
-                <label for="book_title">Book title</label>
-                <input type="text" name="book_title" id="book_title">
+                <input type="text" name="book_title" id="book_title" placeholder="Title">
             </div>
             
             <div class="author">
-                <label for="author">Author</label>
-                <input type="text" name="author" id="author">
+                <input type="text" name="author" id="author" placeholder="Author">
             </div>
 
             <div class="pages">
-                <label for="pages">Number of pages</label>
-                <input type="number" name="pages" id="pages">
+                <input type="number" name="pages" id="pages" placeholder="pages">
             </div>
            
-            ./;;;<div class="read_or_not">
-                <label for="read">Read book?</label>
+            <div class="read_or_not">
                 <select id="read" name="read">
-                    <option value="yes">Yes</option>
-                    <option value="no">no</option>
+                    <optgroup label="Read?">
+                        <option value="yes">Read</option>
+                        <option value="no">Not Read</option>
+                    </optgroup>
                 </select>
             </div>
 
             <div class="btn_container">
-                <button type="submit" id="submit_btn">Add book</button>
+                <button type="submit" id="add_book" onclick=closeForm()>Add book</button>
             </div>
         </form>
 
@@ -54,9 +57,5 @@
             </div>
         </section>
     </main>
-
-    <footer>
-
-    </footer>
 </body>
 </html>
